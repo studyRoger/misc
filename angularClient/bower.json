@@ -1,0 +1,23 @@
+{
+  "name": "angularClient",
+  "version": "0.0.0",
+  "authors": [
+    "study_roger@hotmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-bootstrap": "~0.14.0"
+
+  }
+}

@@ -1,0 +1,16 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+dependencies {
+
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.21'
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.21'
+    compile group: 'org.glassfish.jersey.connectors', name: 'jersey-jetty-connector', version: '2.21'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-jetty-http', version: '2.21'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.21'
+    //compile group: 'com.sun.jersey', name: 'jersey-servlet', version: '2.21'
+
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.3.4.RC0'
+    //compile group: 'org.eclipse.jetty', name: 'jetty-all', version: '9.3.4.RC0'
+    //compile group: 'org.eclipse.jetty.aggregate ', name: 'jetty-all', version: '9.3.4.RC0'
+}

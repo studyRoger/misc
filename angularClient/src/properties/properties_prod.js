@@ -1,0 +1,1 @@
+ angular.module('bookmart').constant("BASE_URL", 'http://PROD-HOST:PROD-PORT/jerseyAngular/rs');

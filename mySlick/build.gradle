@@ -1,0 +1,11 @@
+apply plugin: 'scala'
+
+dependencies {
+    compile group: 'com.typesafe.slick', name: 'slick_2.11', version: '3.1.0-M2'
+    compile group: 'com.typesafe.slick', name: 'slick-codegen_2.11', version: '3.1.0-M2'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.188'
+    compile group: 'org.slf4j', name: 'slf4j-nop', version: '1.6.4'
+
+    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version:'2.2.4'
+
+}
