@@ -9,6 +9,9 @@
                 controller: 'bookShelfCtrl',
                 controllerAs: 'vm'
             })
+            .when('/request', {
+                 templateUrl: 'bookstore/request.html'
+            })
             .otherwise({
                 redirectTo: '/bookmart'
             });
