@@ -34,3 +34,15 @@ def reverse[T](list: List[T]): List[T] = {
   reverse0(list, Nil)
 }
 reverse(List(1, 1, 2, 3, 5, 8))
+
+def isPalindrome[T](list: List[T]): Boolean = list == reverse(list)
+isPalindrome(List(1, 2, 3, 2, 1))
+isPalindrome(List(1))
+isPalindrome(List())
+isPalindrome(List(1, 3, 2, 1))
+
+def flatten(list: List[Any]): List[Any] = list flatMap {
+  case l : List[_] => flatten(l)
+  case e => List(e)
+}
+flatten(List(List(1, 1), 2, List(3, List(5, 8))))
